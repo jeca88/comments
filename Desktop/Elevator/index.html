@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="elevator"></div>
+        <div id="floors">
+            <div class=" floor" id="floor5">
+                <div class="floor-name" id="5" >Floor 5</div>
+                <div class = "buttons" id="btn5"> 
+                    <button class="btn up" onclick ="clickUp(5)"><i class="fas fa-chevron-circle-up"></i></button>
+                    <button class="btn down" onclick ="clickDown(5)"><i class="fas fa-chevron-circle-down"></i></button>
+                </div>
+            </div>
+            <div class="floor" id="4">
+                <div class="floor-name">Floor 4</div>
+                <div class = "buttons" id="btn4"> 
+                    <button class="up" onclick ="clickUp(4)"><i class="fas fa-chevron-circle-up"></i></button>
+                    <button class="down" onclick ="clickDown(4)"><i class="fas fa-chevron-circle-down"></i></button>
+                </div>
+            </div>
+            <div class="floor" id="3">
+                <div class="floor-name">Floor 3</div>
+                <div class = "buttons" id="btn3">
+                    <button onclick ="clickUp(3)" class="up"><i class="fas fa-chevron-circle-up"></i></button>
+                    <button class="down" onclick ="clickDown(3)"><i class="fas fa-chevron-circle-down"></i></button>
+                </div>
+            </div>
+            <div class="floor" id="2">
+                <div class="floor-name">Floor 2</div>
+                <div class = "buttons" id="btn2">
+                    <button class="up" onclick ="clickUp(2)"><i class="fas fa-chevron-circle-up"></i></button>
+                    <button class="down" onclick ="clickDown(2)"><i class="fas fa-chevron-circle-down"></i></button>
+                 </div>
+            </div>
+            <div class="floor" id="1">
+                <div class="floor-name">Floor 1</div>
+                <div class = "buttons" id="btn1">
+                    <button class="up" onclick ="clickUp(1)"><i class="fas fa-chevron-circle-up"></i></button>
+                    <button class="down" onclick ="clickDown(1)"><i class="fas fa-chevron-circle-down"></i></button>
+                </div>
+            </div>
+            <div class="floor" id="0">
+                <div class="floor-name">Ground</div>
+                <div class = "buttons" id="btn0">
+                    <button class="up" onclick ="clickUp(0)"> <i class="fas fa-chevron-circle-up"></i></button>
+                    <button class="down" onclick ="clickDown(0)"><i class="fas fa-chevron-circle-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audio" src="./elevatording.mp3"></audio>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
